@@ -1,0 +1,84 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #050303;
+    
+    color: rgba(16, 178, 94, 0.722);
+}
+
+.text-animation {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.text-animation span{
+    position: relative;
+}
+
+.text-animation span::before{
+    content: '';
+    color: rgba(16, 178, 94, 0.722);
+    animation: palavras 25s infinite;
+    
+}
+
+.text-animation span::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid rgba(16, 178, 94, 0.722);
+    right: -10px;
+    animation: cursor .9s infinite, effect 25s steps(100) infinite;
+    width: calc(100% + 15px);
+    background-color: #050303;    
+    
+}
+
+@keyframes effect {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 15px);
+    }
+
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 4px solid #050303;
+    }
+    
+}
+
+
+
+
+@keyframes palavras {
+    0%,20%{
+        content: "indestrutível";
+    }
+    21%,40%{
+        content: "o melhor coder";
+    }
+    41%,60%{
+        content: "um grande autodidata";
+    }
+    61%,80%{
+        content: "um grande empreendedor";
+    }
+    81%,100%{
+        content: "um homem de respeito";
+    }
+}
