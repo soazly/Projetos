@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #101010;
+    color: #ef0606;
+
+}
+
+.text-animation{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.text-animation span{
+    position: relative;
+}
+
+.text-animation span::before{
+    content: '';
+    color: #ef0606;
+    animation: content 20s infinite;
+
+}
+
+.text-animation span::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    border-left: 3px #ef0606 solid;
+    right: -10px;
+    animation: cursor .7s infinite, effect 20s steps(100) infinite;
+    width: calc(100% + 15px);
+    background-color: #101010;
+}   
+
+@keyframes effect{
+    5%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 25%, 40%, 45%, 60%, 65%, 80%, 85%, 95%{
+        width: calc(100% + 15px);
+    }
+    
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px #000000 solid;
+    }
+    
+}
+
+@keyframes content {
+    0%, 25% {
+        content: 'Agro';
+    }
+    
+    26%, 50%{
+        content: 'uma equipe';
+    }
+
+    51%, 75%{
+        content: 'uma familia';
+    }
+
+    76%, 100%{
+        content: 'ralampago maqquen';
+    }
+}
+
+
+

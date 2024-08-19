@@ -1,0 +1,61 @@
+body{
+    background-color: darkblue;
+    display: block;   
+    justify-content: center;
+
+}
+
+
+.geral {
+    position: relative;
+height: 500px;
+padding: 10px;
+background-color: blue;
+
+}
+
+.cubo1{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: blueviolet;
+    left: 50%;
+    top: 50%;
+    filter: brightness(0.5);
+
+    transform: translate(-50%, -50%);
+
+
+}
+.cubo1:hover,
+.cubo2:hover,
+.cubo3:hover + * + * + *{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 1s;
+    background-color: rgb(183, 175, 17);
+    filter: brightness(2);
+    transform: translateZ(200px) rotateY(40deg);
+}
+
+.geral .cubo1:hover + .cubo2{
+    transform: rotateZ(150px) rotateY(40deg);
+}
+.cubo2{
+    width: 300px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgb(43, 226, 49);
+    margin-right: 10px;
+}
+.cubo3{
+    width: 300px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgb(201, 20, 20);
+
+}

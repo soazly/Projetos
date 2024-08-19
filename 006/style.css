@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgoldenrod;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+
+header > p {
+    padding-bottom: 50px;
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section {
+    padding: 10vh 10vh;
+    line-height: 2em;
+    text-align: center;
+}
+
+.imagem p {
+    background-color: rgba(173, 113, 39, 0.692);
+    width: 400px;
+}
+
+.imagem {
+    background-color: bisque;
+    color: black;
+}
+
+.normal{
+    background-color: brown;
+    color: bisque;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}

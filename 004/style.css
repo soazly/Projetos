@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+body{
+    background-color: blue;
+    
+}
+
+
+.item-list{
+    height: 300px;
+    position: block;
+   
+
+}
+
+.item-list .logo2{
+    height: 300px;
+    width: 100px;
+}
+
+.item-list .logo img{
+    margin: 10px;
+
+}

@@ -1,0 +1,22 @@
+p {
+    font-family: monospace;
+    border-right: 3px solid;
+    width: 12ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(12) alternate infinite, blinking .5s infinite step-end;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    
+}
+
+@keyframes blinking {
+    50%{
+        border-color: transparent;
+    }
+    
+}

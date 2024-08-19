@@ -39,11 +39,12 @@ body{
     height: 100%;
     border-left: 2px solid rgba(16, 178, 94, 0.722);
     right: -10px;
-    animation: cursor .9s infinite, effect 25s steps(100) infinite;
+    animation: cursor .9s infinite, effect 23s steps(100) infinite;
     width: calc(100% + 15px);
     background-color: #050303;    
     
 }
+
 
 @keyframes effect {
     10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
