@@ -3,7 +3,7 @@ const buttonNo = document.querySelector(".no");
 
 function sendMessage(accepted) {
     if (accepted) {
-        alert("Te busco as 19hrs! ");
+        alert("Ótimo, está marcado, te vejo em breve ");
         return;
     }
 
