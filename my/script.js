@@ -3,7 +3,7 @@ const buttonNo = document.querySelector(".no");
 
 function sendMessage(accepted) {
     if (accepted) {
-        alert("Ótimo, está marcado, te vejo em breve ");
+        alert("Ótimo, está marcado. Te vejo em breve ");
         return;
     }
 
