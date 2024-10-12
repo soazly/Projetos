@@ -10,6 +10,8 @@ body {
     color: white;
     overflow-y: hidden;
     overflow-x: hidden;
+    ustify-content: center;
+    align-items: center;
 }
 
 main {
