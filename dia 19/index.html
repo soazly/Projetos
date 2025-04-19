@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Mais um Mês</title>
+</head>
+<body>
+    
+<a href="second.html">
+    <div class="container">
+
+        <div class="valentines">
+            <div class="envelope"></div>
+            <div class="front"></div>
+                <div class="card">
+            
+                <div class="text"><p>Feliz dia 19 ! <br> Amo você</p></div>
+            <div class="heart"></div>
+        </div>
+            <div class="hearts">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+            </div>
+    </div>
+    <div class="shadow"></div>
+</div>
+</a>
+<script>
+
+    $(document).ready(function(){
+        $(".container").mouseenter(function(){
+            $(".card").stop().animate({
+                top:"-95px"
+            },"slow");
+        }).mouseleave(function(){
+            $(".card").stop().animate({
+                top:0
+            }, "slow");
+});
+});
+
+</script>
+
+
+</body>
+</html>
